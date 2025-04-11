@@ -23,6 +23,11 @@ const Footer = () => {
           <Link to="/" className="footer-logo">
             <img src="/logo-drythorn.png" alt="Drythorn Tattoo Studio" />
           </Link>
+          <div className="social-links">
+            <a href="#"><i className="fab fa-instagram"></i></a>
+            <a href="#"><i className="fab fa-facebook"></i></a>
+            <a href="#"><i className="fab fa-whatsapp"></i></a>
+          </div>
           <p>© {new Date().getFullYear()} Drythorn Tattoo Studio</p>
         </div>
       </div>

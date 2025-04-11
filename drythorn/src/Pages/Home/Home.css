@@ -1,14 +1,14 @@
 /* Variables */
 :root {
-    --beige: #F5F5DC;
-    --light-beige: #FFF8E7;
-    --dark-beige: #E6D5B8;
-    --brown: #5D4037;
-    --dark-brown: #3E2723;
-    --light-brown: #8D6E63;
-    --black: #212121;
-    --white: #FFFFFF;
-  }
+  --beige: #F5F5DC;
+  --light-beige: #FFF8E7;
+  --dark-beige: #E6D5B8;
+  --brown: #6D4C41; /* Cor atualizada para o footer */
+  --dark-brown: #3E2723;
+  --light-brown: #8D6E63;
+  --black: #212121;
+  --white: #FFFFFF;
+}
   
   /* Base Styles */
   .home-page {

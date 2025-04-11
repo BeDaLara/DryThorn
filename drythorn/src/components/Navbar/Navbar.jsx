@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -29,12 +30,15 @@ const Navbar = () => {
           <img src="/logo-drythorn.png" alt="Drythorn Tattoo Studio" />
         </Link>
         
-        <div className={`navbar-links ${menuOpen ? 'active' : ''} ${scrolled ? 'visible' : ''}`}>
+        <div className={`navbar-links ${menuOpen ? 'active' : ''}`}>
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/artists" onClick={() => setMenuOpen(false)}>Artistas</Link>
           <Link to="/services" onClick={() => setMenuOpen(false)}>Serviços</Link>
           <Link to="/gallery" onClick={() => setMenuOpen(false)}>Galeria</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>Contato</Link>
+          <Link to="/login" className="login-btn" onClick={() => setMenuOpen(false)}>
+            <FaUser />
+          </Link>
           <Link to="/booking" className="booking-btn" onClick={() => setMenuOpen(false)}>Agendar</Link>
         </div>
         

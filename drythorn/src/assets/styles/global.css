@@ -1,0 +1,169 @@
+/* Variáveis globais */
+:root {
+    --beige: #F5F5DC;
+    --light-beige: #FFF8E7;
+    --dark-beige: #E6D5B8;
+    --brown: #6D4C41;
+    --dark-brown: #3E2723;
+    --light-brown: #8D6E63;
+    --black: #212121;
+    --white: #FFFFFF;
+    --modal-z-index: 2000;
+  }
+  
+  /* Reset e estilos base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Old Standard TT', serif;
+    color: var(--black);
+    line-height: 1.6;
+    background-color: var(--beige);
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Classes utilitárias */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .section {
+    padding: 5rem 0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: var(--dark-brown);
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: var(--light-brown);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background-color: var(--light-brown);
+    color: var(--beige);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--dark-brown);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-secondary {
+    border: 2px solid var(--light-brown);
+    color: var(--light-brown);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--light-brown);
+    color: var(--beige);
+  }
+  
+  /* Estilos para formulários (pode ser útil para futuras páginas) */
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--dark-beige);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    border-color: var(--light-brown);
+    box-shadow: 0 0 0 2px rgba(141, 110, 99, 0.2);
+  }
+  
+  /* Animações básicas */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 992px) {
+    .section {
+      padding: 4rem 0;
+    }
+    
+    .section-title {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      padding: 3rem 0;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .btn {
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      padding: 0 1rem;
+    }
+  }
