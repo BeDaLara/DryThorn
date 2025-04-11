@@ -27,7 +27,10 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <img src="/logo-drythorn.png" alt="Drythorn Tattoo Studio" />
+          <img src="../public/img/caveira.png" alt="Drythorn Tattoo Studio" />
+        </Link>
+        <Link to="/" className="navbar-logo">
+          <img src="../public/img/name.png" alt="Drythorn Tattoo Studio" />
         </Link>
         
         <div className={`navbar-links ${menuOpen ? 'active' : ''}`}>

@@ -12,12 +12,15 @@ const Home = () => {
       <main>
         {/* Banner Section */}
         <section className="banner">
-          <div className="banner-content">
-            <h1>Drythorn Tattoo Studio</h1>
-            <p>Arte que permanece para sempre</p>
-            <Link to="/booking" className="cta-button">Agende sua sessão</Link>
-          </div>
-        </section>
+        <div className="banner-image-container">
+          <img 
+            src="/public/img/banner.png" // Ou use "/images/banner/banner-home.jpg" se estiver em public/
+            alt="Drythorn Tattoo Studio"
+            className="banner-img"
+          />
+        </div>
+        
+      </section>
         
         {/* About Section */}
         <section className="about-section">

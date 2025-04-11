@@ -21,7 +21,7 @@ const Footer = () => {
         
         <div className="footer-section">
           <Link to="/" className="footer-logo">
-            <img src="/logo-drythorn.png" alt="Drythorn Tattoo Studio" />
+            <img src="/public/img/footer.png" alt="Drythorn Tattoo Studio" />
           </Link>
           <div className="social-links">
             <a href="#"><i className="fab fa-instagram"></i></a>
